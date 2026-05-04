@@ -114,6 +114,11 @@ body {
 /* ===========================
    HERO
 =========================== */
+.hero-bg-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .hero {
   position: relative;
   min-height: 100vh;
@@ -125,9 +130,9 @@ body {
 
 .hero-bg-text {
   position: absolute;
-  right: -40px;
+  left: 50%;                  
+  transform: translate(-50%, -50%);  
   top: 50%;
-  transform: translateY(-50%);
   font-family: 'Syne', sans-serif;
   font-size: 280px;
   font-weight: 800;
@@ -533,7 +538,8 @@ body {
 .footer-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;  
+  gap: 40px;                
 }
 
 .footer-logo {
