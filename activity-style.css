@@ -1,0 +1,85 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #0e0e10; color: #f0eee8; }
+
+.act-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(14,14,16,0.95);
+    border-bottom: 0.5px solid rgba(255,255,255,0.08);
+    padding: 14px 32px;
+}
+.act-nav a {
+    color: #7F77DD;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+}
+.act-nav a:hover { opacity: 0.7; }
+
+.act-container {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #16161a;
+    border: 0.5px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+}
+
+.act-container h2, .act-container h3 {
+    color: #f0eee8;
+    margin-bottom: 20px;
+}
+
+.act-container p, .act-container li { color: #a09e9a; line-height: 1.8; margin-bottom: 10px; }
+.act-container b { color: #f0eee8; }
+.act-container label { color: #a09e9a; font-size: 14px; }
+.act-container input[type="text"],
+.act-container input[type="number"] {
+    background: #1f1f25;
+    border: 0.5px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    color: #f0eee8;
+    padding: 8px 12px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.act-container input:focus { border-color: #7F77DD; }
+.act-container select {
+    background: #1f1f25;
+    border: 0.5px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    color: #f0eee8;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.act-container button {
+    background: #7F77DD;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+.act-container button:hover { background: #534AB7; }
+.act-container button[type="reset"],
+.act-container button:nth-child(2) { background: #2a2a35; }
+.act-container button[type="reset"]:hover,
+.act-container button:nth-child(2):hover { background: #3a3a45; }
+
+.act-container table { border-collapse: collapse; width: 100%; }
+.act-container td, .act-container th {
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px;
+    color: #a09e9a;
+    text-align: center;
+}
+.act-container ol, .act-container ul { padding-left: 24px; }
+hr { border: none; border-top: 0.5px solid rgba(255,255,255,0.08); margin: 32px 0; }
